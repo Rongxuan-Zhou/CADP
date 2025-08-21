@@ -1,0 +1,32 @@
+{
+  "safety_evaluation": {
+    "static_obstacles": {
+      "avg_collision_rate": 0.0,
+      "avg_success_rate": 1.0,
+      "avg_inference_time_ms": 9.070068597793579,
+      "avg_smoothness_score": 0.49383642987671605,
+      "std_collision_rate": 0.0,
+      "max_inference_time_ms": 19.24753189086914
+    },
+    "dynamic_obstacles": {
+      "avg_collision_rate": 0.00625,
+      "avg_inference_time_ms": 8.131515979766846
+    },
+    "narrow_corridor": {
+      "corridor_success_rate": 0.8125,
+      "avg_precision_score": 0.9177797734287843
+    }
+  },
+  "physics_analysis": {
+    "collision_loss_mean": 5.321263933181763,
+    "smoothness_loss_mean": 0.0367301931604743,
+    "diffusion_loss_mean": 0.037199139781296256,
+    "physics_ratio": 14403.54308686525
+  },
+  "inference_benchmark": {
+    "avg_inference_time_ms": 8.01810160279274,
+    "max_inference_time_ms": 12.410715222358704,
+    "std_inference_time_ms": 0.7109991822048681
+  },
+  "baseline_comparison": {
+    "success_maintained": 
