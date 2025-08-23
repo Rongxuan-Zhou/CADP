@@ -359,7 +359,6 @@ def evaluate_safety_metrics(model, val_loader):
         for batch in val_loader:
             observations = batch['observation'].to(next(model.parameters()).device)
             actions = batch['action'].to(next(model.parameters()).device)
-            
             safety_metrics = model.get_safety_metrics(actions, observations)
             collision_rates.append(safety_metrics['collision_rate'])
             smoothness_scores.append(safety_metrics['smoothness_score'])
