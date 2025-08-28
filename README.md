@@ -4,31 +4,38 @@
 
 **Bridging Learning-based Generation with Guaranteed-Safe Execution**
 
-This repository implements the Constraint-Aware Diffusion Policy (CADP) for safe robotic manipulation, featuring production-ready CBF safety verification and physics-informed diffusion training achieving 73.8% multi-task success rate.
+This repository implements the Constraint-Aware Diffusion Policy (CADP) for safe robotic manipulation, featuring significant breakthroughs in CBF safety verification performance and physics-informed diffusion training.
 
-## 🎉 Project Status: PRODUCTION READY
+## 🚀 Project Status: PERFORMANCE BREAKTHROUGH ACHIEVED
 
-**Latest Achievement**: Advanced CBF optimization delivers **391.6x speedup** with **100% real-time compliance** for all trajectory lengths.
+**Latest Achievement**: CBF safety verification optimized with **1362x speedup**, achieving sub-millisecond verification times and 100% real-time compliance.
 
 ### Quick Results Summary
 
-| Component | Performance | Status |
-|-----------|-------------|---------|
-| **Physics-Informed Training** | 73.8% multi-task success rate | ✅ Production Ready |
-| **CBF Safety Verification** | <5ms verification (391.6x speedup) | ✅ Production Ready |
-| **System Integration** | <10ms total pipeline | ✅ Ready for Deployment |
+| Component | Implementation Status | Current Performance |
+|-----------|----------------------|--------------------|
+| **Physics-Informed Training** | ✅ Functional | Collision/smoothness losses, training convergence achieved |
+| **CBF Safety Verification** | ✅ **Performance optimized** | **<1ms verification (1362x speedup)** |
+| **System Integration** | ⚠️ SMC controller missing | Core architecture ready, needs SMC implementation |
+
+## 🎯 Latest Achievements
+
+### CBF Performance Breakthrough (2025-08)
+- **Performance**: 1362x average speedup over baseline
+- **Real-time compliance**: 100% of configurations <50ms target
+- **Best result**: 0.2ms verification time (T=10 trajectory)
+- **Technical approach**: Batch processing + vectorization + memory pre-allocation
 
 ## 📋 Project Documentation
 
 ### Core Reports
-- **[📊 Final Project Report](CADP_FINAL_PROJECT_REPORT.md)** | **[中文版](CADP_FINAL_PROJECT_REPORT_ZH.md)** - Complete project overview and achievements
-- **[🚀 Advanced CBF Optimization](CBF_ADVANCED_OPTIMIZATION_REPORT.md)** | **[中文版](CBF_ADVANCED_OPTIMIZATION_REPORT_ZH.md)** - Breakthrough 391.6x speedup results
-- **[🧠 Physics-Informed Training](Physics-Informed%20Diffusion%20Training.md)** | **[中文版](Physics-Informed_Diffusion_Training_ZH.md)** - 80% success rate achievement
-- **[🎯 Multi-Task Evaluation](vanilla_diffusion_policy_evaluation.md)** | **[中文版](vanilla_diffusion_policy_evaluation_ZH.md)** - 73.8% multi-task performance
+- **[🔬 Algorithm Comparison & Analysis](ALGORITHM_COMPARISON_ANALYSIS.md)** - Comprehensive technical analysis and optimization roadmap
+- **[🚀 CBF Optimization Experiment](CBF_OPTIMIZATION_EXPERIMENT_REPORT.md)** - **1362x speedup breakthrough results**
+- **[🎯 Multi-Task Evaluation](vanilla_diffusion_policy_evaluation.md)** | **[中文版](vanilla_diffusion_policy_evaluation_ZH.md)** - Progressive training approach
+- **[📋 Project Documentation Guide](FINAL_PROJECT_DOCUMENTATION.md)** - Document organization and structure
 
 ### Technical Reports
-- **[🔧 CBF Optimization Results](CBF_OPTIMIZATION_RESULTS.md)** | **[中文版](CBF_OPTIMIZATION_RESULTS_ZH.md)** - Performance optimization analysis
-- **[🧪 CBF Verification Tests](CBF_VERIFICATION_TEST_RESULTS.md)** | **[中文版](CBF_VERIFICATION_TEST_RESULTS_ZH.md)** - Safety verification analysis
+- **[🧪 CBF Verification Tests](CBF_VERIFICATION_TEST_RESULTS.md)** | **[中文版](CBF_VERIFICATION_TEST_RESULTS_ZH.md)** - Safety verification implementation and testing
 
 ## 🚀 Quick Start
 

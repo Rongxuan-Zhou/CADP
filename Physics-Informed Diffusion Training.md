@@ -7,11 +7,13 @@ This project successfully implements and optimizes a **Diffusion Policy** for ro
 ## 🏆 Key Achievements
 
 ### Performance Results
+
 - **Original Baseline**: ~40% success rate (validation loss 0.443)
-- **Extended Training**: ~45% success rate (validation loss 0.287) 
+- **Extended Training**: ~45% success rate (validation loss 0.287)
 - **Final Optimized**: **~80% success rate** (validation loss 0.144) ✅
 
 ### Improvements Achieved
+
 - **+67.6%** improvement vs original baseline
 - **+49.9%** improvement vs extended training
 - **Target exceeded**: 80% >> 60% goal 🎯
@@ -19,14 +21,16 @@ This project successfully implements and optimizes a **Diffusion Policy** for ro
 ## 🚀 Technical Approach
 
 ### Model Architecture
+
 - **Framework**: Diffusion Policy with U-Net architecture
 - **Capacity**: 2.67M parameters (4x increase from baseline)
-- **Features**: 
+- **Features**:
   - Conditional residual blocks with observation conditioning
   - Time embeddings for diffusion process
   - Enhanced normalization and regularization
 
 ### Training Strategy
+
 - **Dataset**: RoboMimic lift task (200 demonstrations)
 - **Epochs**: 200 (2x extended training)
 - **Sequence Length**: 36 steps (optimized horizon)
@@ -34,6 +38,7 @@ This project successfully implements and optimizes a **Diffusion Policy** for ro
 - **Hardware**: RTX 4070 Laptop GPU (7.8GB)
 
 ### Key Optimizations
+
 1. **Model Capacity**: 0.67M → 2.67M parameters
 2. **Extended Training**: 100 → 200 epochs
 3. **Longer Sequences**: 32 → 36 steps
@@ -44,11 +49,13 @@ This project successfully implements and optimizes a **Diffusion Policy** for ro
 ## 📊 Training Results
 
 ### Validation Loss Progression
+
 - **Epoch 1**: 3.36 (initial)
 - **Epoch 99**: **0.144** (best validation loss)
 - **Epoch 200**: 0.48 (final training loss)
 
 ### Model Performance
+
 - **Best Epoch**: 99/200
 - **Convergence**: Stable training with early best performance
 - **Memory Efficiency**: ~2.7GB GPU utilization
@@ -83,6 +90,7 @@ CADP/
 ## 🛠️ Usage Instructions
 
 ### Training
+
 ```bash
 # Activate environment
 conda activate vanilla_diffusion_policy
@@ -92,6 +100,7 @@ python train_optimized_realistic.py --epochs 200 --batch_size 8 --horizon 36
 ```
 
 ### Model Loading
+
 ```python
 import torch
 from src.models.diffusion_model import create_model
@@ -109,12 +118,15 @@ model.eval()
 ## 📈 Performance Analysis
 
 ### Success Rate Estimation
+
 Based on validation loss correlation with task performance:
+
 - **Validation Loss < 0.15**: ~80% success rate ✅
 - **Current Achievement**: 0.144 validation loss
 - **Estimated Performance**: **80% success rate**
 
 ### Comparison with Baselines
+
 - **DPPO Baseline**: ~100% (reference from literature)
 - **Original Diffusion Policy**: ~90% (reference)
 - **Our Implementation**: **~80%** (achieved with limited resources)
@@ -122,11 +134,13 @@ Based on validation loss correlation with task performance:
 ## 🔧 Technical Specifications
 
 ### Hardware Requirements
+
 - **GPU**: NVIDIA RTX 4070+ (8GB VRAM minimum)
 - **RAM**: 16GB+ system memory
 - **Storage**: 2GB for dataset + checkpoints
 
 ### Dependencies
+
 - PyTorch 2.0+
 - CUDA 11.8+
 - NumPy, HDF5, Matplotlib
@@ -135,7 +149,7 @@ Based on validation loss correlation with task performance:
 ## 🎓 Lessons Learned
 
 1. **Model Capacity Matters**: 4x parameter increase crucial for performance
-2. **Extended Training**: 200 epochs needed for full convergence  
+2. **Extended Training**: 200 epochs needed for full convergence
 3. **Sequence Length**: Longer horizons improve temporal modeling
 4. **Regularization**: EMA and proper scheduling prevent overfitting
 5. **Hardware Optimization**: Efficient memory usage enables larger models
@@ -143,12 +157,14 @@ Based on validation loss correlation with task performance:
 ## 🔬 Future Work
 
 ### Potential Improvements
+
 - **Larger Models**: 5-10M parameters with more VRAM
 - **Advanced Architectures**: Attention mechanisms, transformers
 - **Online Learning**: DPPO fine-tuning for 90%+ performance
 - **Multi-Task**: Training across different manipulation tasks
 
 ### Research Directions
+
 - Diffusion policy variants (DDIM, score-based)
 - Hierarchical action representations
 - Real robot deployment and validation
@@ -162,8 +178,6 @@ Based on validation loss correlation with task performance:
 ## 👥 Project Team
 
 **CADP Project Team** - Implementation and optimization of diffusion policies for robotic manipulation.
-
----
 
 ## 🎉 Project Status: **COMPLETED SUCCESSFULLY** ✅
 
